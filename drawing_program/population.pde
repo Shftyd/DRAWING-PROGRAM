@@ -1,6 +1,7 @@
 void population() {
-buttonX =displayWidth * 1/5;
-buttonY =displayHeight * 1/5;
-buttonWidth = displayWidth  ;
-buttonHeight = displayHeight ;
+drawingSurfaceX =displayWidth * 1/5;
+drawingSurfaceY =displayHeight * 0;
+drawingSurfaceWidth = displayWidth  ;
+drawingSurfaceHeight = displayHeight ;
+drawingDiameter = displayWidth*1/100;
 }//End populatno
