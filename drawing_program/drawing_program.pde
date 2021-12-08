@@ -8,9 +8,14 @@ void setup() {
   fullScreen();
 
   population();
+  quitButtonSetup();
+  
+  //
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
+  //
 }
 void draw() {
+  quitButtonDraw();
   if (draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight)
   { 
    
@@ -18,6 +23,7 @@ void draw() {
   }
 }
 void mousePressed() {
+  quitButtonMousePressed();
   if (mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight) {
   }
   
