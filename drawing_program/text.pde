@@ -1,12 +1,21 @@
+/* Example Subprogram
+ Purpose: to reuse code by passing parameters to voids (void does not return)
+ Reason: simplifies code, no more copying and pasting code to reuse
+ Reminder: design of parameters are important, here string and size are passed only
+ */
+
 //Global Variables
+//Font Type
+//Initial Size
+//Black Int
 
-void textQuitButton() {
-}//End textQuitButton
+void textSetup() {}//End textSetup()
 
-void text() {
-}//End text()
+//Code to be repeated instead of copied and pasted
+void textCode() {
+}//End textCode()
 
-/* Text-text to copy here
+/* Code from Text-Lesson to copy above
  println("Start of Console");
  //Fonts from OS
  String[] fontList = PFont.list(); //To list all fonts available on system
