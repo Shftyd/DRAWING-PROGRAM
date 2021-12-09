@@ -9,6 +9,7 @@ void setup() {
 
   population();
   quitButtonSetup();
+  textSetup();
 
   //
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);

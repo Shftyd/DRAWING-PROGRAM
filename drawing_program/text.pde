@@ -5,30 +5,31 @@
  */
 
 //Global Variables
-//Font Type
+PFont font;//Font Type
 //Initial Size
-//Black Int
+color black=#000000, white=#FFFFFF;//Black Int
 
-void textSetup() {}//End textSetup()
-
-//Code to be repeated instead of copied and pasted
-void textCode() {
-}//End textCode()
-
-/* Code from Text-Lesson to copy above
- println("Start of Console");
+void textSetup() {
+  
+  println("Start of Console");
  //Fonts from OS
  String[] fontList = PFont.list(); //To list all fonts available on system
  printArray(fontList); //For listing all possible fonts to choose, then createFont
- titleFont = createFont ("Harrington", 55); //Verify font exists
+ 
+ font = createFont ("Harrington", 55); //Verify font exists
  //Tools / Create Font / Find Font / Do Not Press "OK", known bug
- //Layout with a rect()
- fill(purpleInk); //Ink, hexidecimal copied from Color Selector
+ //Layout with a 
+ rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
+}//End textSetup()
+
+//Code to be repeated instead of copied and pasted
+void textCode(String text, int size, float quitButtonX, float quitButtonY, float quitButtonWidth, float quitButtonHeight) {
+   fill(black); //Ink, hexidecimal copied from Color Selector
  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
- textFont(titleFont, 50); //Change the number until it fits, largest font size
+ textFont(font, size); //Change the number until it fits, largest font size
  //textFont() has option to combine font declaration with textSize()
  //Drawing Text
- text(title, titleX, titleY, titleWidth, titleHeight);
- fill(whiteInk); //reset
- */
+ text(text, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
+ fill(white); //reset
+}//End textCode()
