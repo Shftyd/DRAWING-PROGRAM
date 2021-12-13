@@ -9,6 +9,7 @@ void setup() {
 
   population();
   quitButtonSetup();
+  resetButtonSetup();
   textSetup();
 
   //
@@ -17,6 +18,7 @@ void setup() {
 }
 void draw() {
   quitButtonDraw();
+   resetButtonDraw() ;
   if (draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight)
   { 
 
@@ -25,6 +27,7 @@ void draw() {
 }
 void mousePressed() {
   quitButtonMousePressed();
+  resetButtonMousePressed();
   if (mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight) {
   }
 
