@@ -11,6 +11,8 @@ void setup() {
   quitButtonSetup();
   resetButtonSetup();
   textSetup();
+  thickLinesetup();
+  thinLinesetup();
 
   //
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
@@ -18,7 +20,9 @@ void setup() {
 }
 void draw() {
   quitButtonDraw();
-   resetButtonDraw() ;
+  resetButtonDraw() ;
+  thickLineDraw();
+  thinLineDraw();
   if (draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight)
   { 
 
@@ -28,6 +32,8 @@ void draw() {
 void mousePressed() {
   quitButtonMousePressed();
   resetButtonMousePressed();
+  thickLineMousePressed();
+  thinLineMousePressed();
   if (mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight) {
   }
 
