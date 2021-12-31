@@ -6,6 +6,6 @@ drawingSurfaceHeight = displayHeight ;
 drawingDiameter = displayWidth*1/100;
 quitButtonX =displayWidth*0;
 quitButtonY =displayHeight*1/4;
-quitButtonWidth =displayWidth*1/5;
-quitButtonHeight =displayHeight*1/5;
+quitButtonWidth =displayWidth*1/10;
+quitButtonHeight =displayHeight*1/15;
 }//End population

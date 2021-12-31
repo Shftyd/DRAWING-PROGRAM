@@ -8,8 +8,8 @@ void resetButtonSetup()
 {
   resetButtonX =displayWidth*0;
   resetButtonY =displayHeight*2/4;
-  resetButtonWidth =displayWidth*1/5;
-  resetButtonHeight =displayHeight*1/5;
+  resetButtonWidth =displayWidth*1/10;
+  resetButtonHeight =displayHeight*1/15;
    rect(resetButtonX, resetButtonY, resetButtonWidth, resetButtonHeight);
 }//end quitButtonSetup()
 
@@ -24,7 +24,7 @@ void resetButtonDraw()
   fill(resetButtonColor);
   rect(resetButtonX, resetButtonY, resetButtonWidth, resetButtonHeight);
   stroke(reset);
- textCode(resetButton, 50, resetButtonX, resetButtonY, resetButtonWidth, resetButtonHeight);
+ textCode(resetButton, 20, resetButtonX, resetButtonY, resetButtonWidth, resetButtonHeight);
 }//end resetButtonDraw()
 
 void resetButtonMousePressed() 
