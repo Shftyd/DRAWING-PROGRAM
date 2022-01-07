@@ -4,8 +4,8 @@ float drawingSurfaceX3, drawingSurfaceY3, drawingSurfaceWidth3, drawingSurfaceHe
 
 void thinLinesetup() 
 {
-  thinlineX =displayWidth*0;
-  thinlineY =displayHeight*2/3;
+  thinlineX =displayWidth*30/100;
+  thinlineY =displayHeight*0;
   thinlineWidth =displayWidth*1/20;
   thinlineHeight =displayHeight*1/20;
 }

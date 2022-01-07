@@ -3,8 +3,8 @@ float thicklineX, thicklineY, thicklineWidth, thicklineHeight;
 float drawingSurfaceX2, drawingSurfaceY2, drawingSurfaceWidth2, drawingSurfaceHeight2, drawingDiameter2;
 void thickLinesetup() 
 {
-  thicklineX =displayWidth*0;
-  thicklineY =displayHeight*19/25;
+  thicklineX =displayWidth*25/100;
+  thicklineY =displayHeight*0;
   thicklineWidth =displayWidth*1/20;
   thicklineHeight =displayHeight*1/20;
 }

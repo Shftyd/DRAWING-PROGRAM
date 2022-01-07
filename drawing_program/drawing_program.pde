@@ -13,6 +13,9 @@ void setup() {
   textSetup();
   thickLinesetup();
   thinLinesetup();
+  superthickLinesetup();
+  superthinLinesetup();
+  erasersetup();
 
   //
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
@@ -23,6 +26,10 @@ void draw() {
   resetButtonDraw() ;
   thickLineDraw();
   thinLineDraw();
+  superthickLineDraw();
+  superthinLineDraw();
+  eraserDraw();
+  
   if (draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight)
   { 
 
@@ -34,6 +41,10 @@ void mousePressed() {
   resetButtonMousePressed();
   thickLineMousePressed();
   thinLineMousePressed();
+  superthickLineMousePressed();
+  superthinLineMousePressed();
+  eraserMousePressed();
+  
   if (mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight) {
   }
 
@@ -42,6 +53,7 @@ void mousePressed() {
   } else {
     draw = false;
   }//End draw boolean
+  
 }//End line draw
 
 void keyPressed() {
