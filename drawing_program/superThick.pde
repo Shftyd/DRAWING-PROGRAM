@@ -22,4 +22,5 @@ void superthickLineDraw()
 void superthickLineMousePressed() 
 {
   if (mouseX>superthicklineX && mouseX<superthicklineX+superthicklineWidth && mouseY>superthicklineY && mouseY<superthicklineY+superthicklineHeight);
+
 }

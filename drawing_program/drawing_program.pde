@@ -10,25 +10,25 @@ void setup() {
   population();
   quitButtonSetup();
   resetButtonSetup();
-  textSetup();
-  thickLinesetup();
-  thinLinesetup();
-  superthickLinesetup();
-  superthinLinesetup();
-  erasersetup();
+ textSetup();
+ thickLinesetup();
+ thinLinesetup();
+ superthickLinesetup();
+ superthinLinesetup();
+ erasersetup();
 
   //
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
 }
 void draw() {
-  quitButtonDraw();
-  resetButtonDraw() ;
-  thickLineDraw();
-  thinLineDraw();
-  superthickLineDraw();
-  superthinLineDraw();
-  eraserDraw();
+ quitButtonDraw();
+ resetButtonDraw() ;
+ thickLineDraw();
+ thinLineDraw();
+ superthickLineDraw();
+ superthinLineDraw();
+ eraserDraw();
   
   if (draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight)
   { 
@@ -39,11 +39,11 @@ void draw() {
 void mousePressed() {
   quitButtonMousePressed();
   resetButtonMousePressed();
-  thickLineMousePressed();
-  thinLineMousePressed();
-  superthickLineMousePressed();
-  superthinLineMousePressed();
-  eraserMousePressed();
+ thickLineMousePressed();
+ thinLineMousePressed();
+ superthickLineMousePressed();
+ superthinLineMousePressed();
+ eraserMousePressed();
   
   if (mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight) {
   }

@@ -9,12 +9,8 @@ void erasersetup()
  eraserHeight =displayHeight*1/20;
 }
 
-void eraserDraw() 
-{
-  if (draw == true && mouseX>drawingSurfaceX6 && mouseX<drawingSurfaceX6+drawingSurfaceWidth6 && mouseY>drawingSurfaceY6 && mouseY<drawingSurfaceHeight6) 
-  {
-  ellipse(mouseX, mouseY, drawingDiameter6, drawingDiameter6);  
-}
+void eraserDraw() {
+
 
   rect(eraserX, eraserY, eraserWidth, eraserHeight);
 }
